@@ -5,6 +5,7 @@
     font-family: 'Playfair Display', serif;
 }
 
+/* Video fondo */
 .wrapper {
     position: absolute;
     top: 0;
@@ -26,13 +27,50 @@ header {
     min-height: 100vh;
     background-color: black;
     opacity: 0.8;
+    padding-left: 10em;
+    
+    padding-top: 20em; 
 } 
 
+header > div >h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 128px;
+    letter-spacing: -2px;
+    
+}
+
+header > p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    color: white;
+    opacity: 0.6;
+}
+
+header > a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    color: #FF6666;
+}
+
+
+
+/* Maquetación del Menú */
 #menu {
     width: 100%;
     z-index: 1;
     position: fixed;
-    padding-top: 1em;
+    padding-top: 2em;
     top:0;
 }
 
@@ -69,9 +107,11 @@ header {
     font-family: Montserrat;
     list-style: none;
     text-decoration: none;
-
 }
 
+/* ESTILOS PARA LA PÁGINA PRINCIPAL */
+
+/* Maquetación general de las secciones */
 section {
     min-height: 100vh;
     display: flex;
@@ -80,8 +120,72 @@ section {
     padding-right: 10em;
 }
 
+
+
 #quien {
-    width: 100%;
-    background-color: rgba(196, 196, 196);
+    /*background-color: rgba(196, 196, 196);*/
+    background: #CC5252;
+    display: flex;  
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5em;
+}
+
+#quien > div {
+    display: flex;
+    align-items: flex-end;
+}
+
+#quien > div > div {
+    flex: 50%;
+}
+
+#quien > div > div > figure  {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    
+} 
+
+#quien > div > div > figure > img {
+    width: 70%;
+}
+
+#quien > div > div > h1 {
+    color: white;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0.05em;
+    padding-bottom: 1em;
+}
+#quien > div > div > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 10x;
+    letter-spacing: 0.44px;
+    color: #F2F2F2;
+    margin-top:2em;
 
 }
+
+#donde {
+    background: rgba(196, 196, 196, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#donde > div {
+    display: flex;
+    align-items: flex-end;
+}
+
+#donde > div > div {
+    flex: 20%;
+}
+

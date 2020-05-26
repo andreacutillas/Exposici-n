@@ -32,7 +32,7 @@ header {
     padding-top: 20em; 
 } 
 
-header > div >h1 {
+header > div > h1 {
     color: white;
     font-weight: 900;
     font-size: 96px;
@@ -52,7 +52,7 @@ header > p{
     opacity: 0.6;
 }
 
-header > a {
+a {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -116,6 +116,7 @@ section {
     flex-direction: column;
     padding-left: 10em;
     padding-right: 10em;
+    padding-bottom: 5em;
 }
 
 h1 {
@@ -151,13 +152,15 @@ p{
     margin-top:2em;
 }
 
+/* Maquetación Quien */
+
+
 #quien {
     /*background-color: rgba(196, 196, 196);*/
     background: #CC5252;
     display: flex;  
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 5em;
 }
 
 #quien > div {
@@ -182,12 +185,6 @@ p{
 
 #quien > div > div > h1 {
     color: white;
-    font-family: Playfair Display;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 80px;
-    letter-spacing: 0.05em;
     padding-bottom: 1em;
     
 }
@@ -195,6 +192,8 @@ p{
     color: #F2F2F2;
     margin-top:2em;
 }
+
+/* Maquetación Donde */
 
 #donde {
     background: rgba(196, 196, 196, 0.2);
@@ -206,13 +205,9 @@ p{
 
 #donde > div {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
-#donde > div > div {
-    flex: 70%;
-    
-}
 #donde > div > div > h1 {
     color: black;
     padding-bottom: 1em;
@@ -226,57 +221,115 @@ p{
     color: gray;
 }
 
+#donde > div > div > div > a {
+    font-size: 0.9em;
+}
+
+
+#donde > div > div.mapa {
+    position: relative;
+    left: 50vh;
+}
+
 #donde > div > div > iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:red;
-    margin-top: 4em;
-    padding-bottom: 4em;
-    
-    
+    background-color: #FF6666;
+    padding: 4em;
+    box-sizing: content-box;
+    margin-left: 3em; 
 }
 
-#expo > div.galeria > div {
-    width: 300%;
-    position: relative;
+/* Maquetación Expo */
+
+#expo {
+    background-color: #CC5252;
     display: flex;
-    animation: slider9 10s infinite;
+    justify-content: center;
+    align-items: flex-end;
+} 
+
+#expo > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }
 
-#expo > div.galeria {
-    width: 100%;
-    overflow: hidden;
+#expo > div > div > a {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+
+    letter-spacing: 0.3em;
+    color: white;
+    font-size: 0.7em;
+    background: #FF6666;
+
+     /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    padding: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 3px;
 }
-#expo > div.galeria > div > figure{
-    flex: 33%;
+
+/* ESTILOS PARA LA PÁGINA EXPO */
+#cabecera-expo {
+    background-image: url(../img/Rectangle.png);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
 }
 
-    @keyframes slider9 {
-    0% {
-        left: 0;
-    }
+#cabecera-expo > div.tipo {
+    color: black;
+    margin-top: 0;
+    padding-bottom: 4em;
+}
 
-    25% {
-        left: 0;
-    }
+#cabecera-expo > div.tipo > p {
+    color: black;
+    margin-top: 0;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    opacity: 0.6;
+}
 
-    30% {
-        left: -100%;
-    }
+#cabecera-expo > div.tipo > h1 {
+    color: #CC5252;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 128px;
+    letter-spacing: -2px;
+}
 
-    55% {
-        left: -100%;
-    }
+#cabecera-expo > div.menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    60% {
-        left: -200%;
-    }
+#cabecera-expo > div.menu2 > a{ 
+    flex: 23%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    color: FF6666;
+    padding: 1em;
+    box-sizing: content-box;
+    margin: 1em;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9em;
+    line-height: 24px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 5px;
 
-    85% {
-        left: -200%;
-    }
-
-    100% {
-        left: 0;
-    }
+}

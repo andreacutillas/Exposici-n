@@ -5,6 +5,10 @@
     font-family: 'Playfair Display', serif;
 }
 
+img {
+    width: 100%;
+    vertical-align: middle;
+}
 /* Video fondo */
 .wrapper {
     position: absolute;
@@ -206,6 +210,7 @@ p{
 #donde > div {
     display: flex;
     align-items: flex-end;
+    overflow: hidden;
 }
 
 #donde > div > div > h1 {
@@ -228,7 +233,8 @@ p{
 
 #donde > div > div.mapa {
     position: relative;
-    left: 50vh;
+    left: 10vw;
+    /*transition duration 1seg*/
 }
 
 #donde > div > div > iframe {
@@ -252,8 +258,12 @@ p{
 
 #expo > div {
     display: flex;
-    align-items: flex-end;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#expo > div > div:last-child {
+    width: 45%;
 }
 
 #expo > div > div > a {
@@ -273,7 +283,27 @@ p{
     border-radius: 3px;
 }
 
+.galeria {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.galeria > div {
+    position: relative;
+    left: 0;
+    width: 300%;
+    display: flex;
+    transition-duration: 1s;
+}
+
+.galeria > div > figure {
+    flex: 33%;
+}
+
 /* ESTILOS PARA LA PÁGINA EXPO */
+
+
 #cabecera-expo {
     background-image: url(../img/Rectangle.png);
     display: flex;
@@ -315,6 +345,12 @@ p{
 }
 
 #cabecera-expo > div.menu2 > a{ 
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+
     flex: 23%;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
@@ -333,6 +369,7 @@ p{
     letter-spacing: 5px;
 
 }
+/*
 .galeria {
     width: 90%;
     margin: 5em auto;
@@ -370,9 +407,9 @@ p{
     font-size: 16px;
     line-height: 24px;
 /* or 150% */
-    letter-spacing: 0.44px;
+/*    letter-spacing: 0.44px;
 
 }
 .galeria > figure:hover> figcaption{
     opacity: 1;
-}
+}*/

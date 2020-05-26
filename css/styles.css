@@ -236,3 +236,47 @@ p{
     
     
 }
+
+#expo > div.galeria > div {
+    width: 300%;
+    position: relative;
+    display: flex;
+    animation: slider9 10s infinite;
+}
+
+#expo > div.galeria {
+    width: 100%;
+    overflow: hidden;
+}
+#expo > div.galeria > div > figure{
+    flex: 33%;
+}
+
+    @keyframes slider9 {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 0;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    55% {
+        left: -100%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    85% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }

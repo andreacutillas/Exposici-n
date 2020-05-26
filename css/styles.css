@@ -63,8 +63,6 @@ header > a {
     color: #FF6666;
 }
 
-
-
 /* Maquetación del Menú */
 #menu {
     width: 100%;
@@ -120,7 +118,38 @@ section {
     padding-right: 10em;
 }
 
+h1 {
+    color: white;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0.05em;
+    
+}
 
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 29px;
+    letter-spacing: 0.2em;
+
+    color: #000000;
+}
+
+p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 10x;
+    letter-spacing: 0.44px;
+    color: #F2F2F2;
+    margin-top:2em;
+}
 
 #quien {
     /*background-color: rgba(196, 196, 196);*/
@@ -160,17 +189,11 @@ section {
     line-height: 80px;
     letter-spacing: 0.05em;
     padding-bottom: 1em;
+    
 }
 #quien > div > div > p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 10x;
-    letter-spacing: 0.44px;
     color: #F2F2F2;
     margin-top:2em;
-
 }
 
 #donde {
@@ -178,14 +201,38 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 0 ;
 }
 
 #donde > div {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 #donde > div > div {
-    flex: 20%;
+    flex: 70%;
+    
+}
+#donde > div > div > h1 {
+    color: black;
+    padding-bottom: 1em;
 }
 
+#donde > div > div > div > h2 {
+    padding-top: 1em;
+}
+
+#donde > div > div > div > p {
+    color: gray;
+}
+
+#donde > div > div > iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:red;
+    margin-top: 4em;
+    padding-bottom: 4em;
+    
+    
+}

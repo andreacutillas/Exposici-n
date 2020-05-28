@@ -338,13 +338,13 @@ p{
     letter-spacing: -2px;
 }
 
-.menu2 {
+#cabecera-expo > div.menu2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.menu2 > a{ 
+#cabecera-expo > div.menu2 > a{ 
     height: 4em;
     display: flex;
     justify-content: center;
@@ -368,11 +368,6 @@ p{
     align-items: center;
     letter-spacing: 5px;
 
-}
-
-.menu2 > a:nth-child(1){
-    background-image: url(../img/12MillionBlackVoices/1.jpg);
-    background-color: black;
 }
 /*
 .galeria {

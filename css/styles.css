@@ -545,8 +545,10 @@ footer {
     font-size: 0.9em;
 }
 
-footer > p2 {
+.copy {
     font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10em;
 }
 
 p1 {
@@ -556,6 +558,28 @@ p1 {
 .direcciones > div > a {
     color: #FF6666; 
 }
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > div > div.direcciones1 {
+    padding-right: 20em;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

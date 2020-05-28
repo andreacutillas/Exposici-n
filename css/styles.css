@@ -325,6 +325,44 @@ p{
     flex: 99%;
 }
 
+#expo > div > div.galeria > div {
+    width: 300%;
+    position: relative;
+    display: flex;
+    animation: slider3 10s infinite; 
+}
+
+
+@keyframes slider3 {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 0;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    55% {
+        left: -100%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    85% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
 /* ESTILOS PARA LA PÁGINA EXPO */
 
 
@@ -441,25 +479,25 @@ p{
     transform: scale(1.1, 1.1);
 }
 
-.galeria2 > div {
-    height: 50%;
+.galeria2 {
+    height: 30%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     
 }
-.galeria2 {
+.section > div {
     flex-wrap: wrap;
-    flex: 33%;
-    width: 50%;
+    width: 300%;
     margin: 5em auto;
     display: flex;
 }
 .galeria2 > figure {
-   position: relative;
+    position: relative;
     padding: 3px;
-    flex: 30%;
+    flex: 33%;
     padding-top: 3px;
+    width: 30%;
 
     
 }
@@ -468,7 +506,7 @@ p{
     
     
 }
-.galeria2 > figure > figcaption {
+.galeria2  > figure > figcaption {
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 0;
@@ -494,3 +532,8 @@ p{
 .galeria2 > figure:hover> figcaption {
     opacity: 1;
 }
+
+
+
+
+

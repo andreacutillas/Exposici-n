@@ -3,3 +3,5 @@ function moverMapa() {
     
     mapa.style.left = "auto";
 }
+
+

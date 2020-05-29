@@ -1,3 +1,35 @@
+/*Ventana Modal*/
+
+function setImagenActual(n) {
+    "use strict";
+
+    //Se busca el figure de la posición correspondiente
+    var figure = document.getElementById("galeria1").children[n - 1];
+
+    //Se busca la ruta de la imagen
+    var ruta_imagen = figure.firstElementChild.getAttribute("src");
+
+    //Se busca la imagen de la ventana modal y se le asigna el valor de la ruta en su atributo src
+    var imagen = document.getElementById("modal").firstElementChild.firstElementChild;
+    imagen.setAttribute("src", ruta_imagen);
+
+    //Se extrae el texto del figcaption del figure pulsado y se añade en el de la ventana modal
+    var pie = document.getElementById("modal").firstElementChild.lastElementChild;
+    pie.innerHTML = figure.lastElementChild.innerHTML;
+
+    //Se muestra la ventana modal
+    document.getElementById("modal").style.display = "flex";
+}
+
+/**
+ * Oculta la ventana modal
+ */
+function cerrarVentana() {
+    "use strict";
+    document.getElementById("modal").style.display = "none";
+}
+
+
 
 
 

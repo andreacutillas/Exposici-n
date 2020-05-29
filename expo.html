@@ -45,29 +45,37 @@
                 <h3>12 Millons Black Voices</h3>
                
                 <div id="galeria1">
-                    <figure>
+                    <figure onclick="setImagenActual(1)">
                         <img src="img/12MillionBlackVoices/1.jpg" alt="">
-                     <figcaption>Sharecroppers, Eutaw, Alabama. July 1936</figcaption>
+                        <figcaption>Sharecroppers, Eutaw, Alabama. July 1936</figcaption>
                     </figure>
-                    <figure>
+                    <figure onclick="setImagenActual(2)">
                         <img src="img/12MillionBlackVoices/2.jpg" alt="">
-                     <figcaption>Hoe Culture, Alabama. June 1936</figcaption>
+                        <figcaption>Hoe Culture, Alabama. June 1936</figcaption>
                     </figure>
-               
-                    <figure> 
+                    <figure onclick="setImagenActual(3)"> 
                         <img src="img/12MillionBlackVoices/3.jpg" alt="">
-                     <figcaption>Randolph County, North Carolina. July 1939</figcaption>
+                        <figcaption>Randolph County, North Carolina. July 1939</figcaption>
                     </figure>
-                    <figure>
-                         <img src="img/12MillionBlackVoices/4.jpg" alt="">
-                     <figcaption>Cotton Hoers. 1937</figcaption>
-                    </figure>
-                
-                    <figure class="customsize1">
-                     <img src="img/12MillionBlackVoices/5.jpg" alt="">
-                     <figcaption>Plantation Overseer and his Field Hands, Mississippi Delta. June 1936</figcaption>
+                    <figure onclick="setImagenActual(4)">
+                        <img src="img/12MillionBlackVoices/4.jpg" alt="">
+                        <figcaption>Cotton Hoers. 1937</figcaption>
+                    </figure>     
+                    <figure class="customsize1" onclick="setImagenActual(5)">
+                        <img src="img/12MillionBlackVoices/5.jpg" alt="">
+                        <figcaption>Plantation Overseer and his Field Hands, Mississippi Delta. June 1936</figcaption>
                     </figure>  
                 </div>
+
+                <!--Ventana modal -->
+                <div id="modal">
+                    <figure>
+                        <img src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <span id="cerrar" onclick="cerrarVentana()">X</span>
+                </div>
+           
                
                 
             </section>

@@ -638,6 +638,113 @@ footer > section > form {
   font-size: 0.9em;
 }
 
+@media screen and (max-width: 900px) {
+    
+
+.galeria > figure {
+    flex: 50%;
+}
+    
+.galeria1 > figure {
+    flex: 30%;
+}
+   
+     
+#menu > ul {
+    max-width: 600px;
+    margin: auto;
+}
+  
+h1 {
+    font-size: 55px;
+}
+
+section {
+    padding: 1em;
+    padding-top: 3em;
+}
+
+#inicio > div {
+    flex-direction: column;
+    align-items: center;
+}
+
+#inicio > div > div.galeria2 {
+    width: 70vh;
+    padding-bottom: 3em;
+}
+
+     
+}
+
+#menu > ul > li:first-child {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        height: auto;
+}
+
+#expo > div > div.galeria {
+    width: 50vh;
+    padding-bottom: 2em;
+}
+   
+.galeria {
+    max-width: 600px;
+    justify-content: center;
+}
+    
+.galeria > figure {
+    flex: 100%;
+}
+    
+.galeria1 {
+    max-width: 600px;
+    justify-content: center;
+}
+    
+.galeria1 > figure {
+    flex: 100%;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+    
+.wrapper {
+    display: none;
+    }
+ 
+    
+h1 {
+font-size: 0.5em;
+    }
+
+p {
+    font-size: 0.5em;
+    }
+    
+    /*  Ponemos los elementos del menú en vertical */
+#menu > ul {
+    flex-direction: column;
+    }
+
+    /* Mostramos la opción del menú con el icono y ocultamos el resto de opciones */
+#menu > ul > li:first-child {
+    display: block;
+    }
+
+#menu > ul > li:not(:first-child) {
+    display: none;
+    }
+}
 
 
 

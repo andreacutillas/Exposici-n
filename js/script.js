@@ -1,10 +1,7 @@
-/*Ventana Modal*/
-
 function setImagenActual(n) {
     "use strict";
-
-    //Se busca el figure de la posición correspondiente
     var figure = document.getElementById("galeria1").children[n - 1];
+
 
     //Se busca la ruta de la imagen
     var ruta_imagen = figure.firstElementChild.getAttribute("src");
@@ -28,6 +25,9 @@ function cerrarVentana() {
     "use strict";
     document.getElementById("modal").style.display = "none";
 }
+
+
+
 
 
 
@@ -132,7 +132,7 @@ window.onscroll = function () {
         
         
         
-function openMenu() {
+/* function openMenu() {
     "use strict";
     //Buscamos los li y los guardamos en una variable
     var opciones = document.getElementById("menu").firstElementChild.children;
@@ -154,9 +154,9 @@ function closeMenu() {
             opciones[i].style.display = "none";
         }
     }
-}
+} */
 
-function menu() {
+/* function menu() {
     "use strict";
     if (document.getElementById("menu").firstElementChild.lastElementChild.style.display === "block") {
         closeMenu();
@@ -173,9 +173,9 @@ function openedMenu() {
     for (i = 1; i < opciones.length; i = i + 1) {
         opciones[i].style.display = "block";
     }
-}
+} */
 
-
+/* 
 window.onresize = function () {
     "use strict";
     if (window.innerWidth <= 700) {
@@ -184,7 +184,7 @@ window.onresize = function () {
         openedMenu();
     }
 }
-
+ */
         
         
         

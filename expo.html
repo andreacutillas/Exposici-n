@@ -41,39 +41,40 @@
         </nav>
        
         <main>
+
+            <!--Ventana modal -->
+            <div id="modal">
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <span id="cerrar" onclick="cerrarVentana()">X</span>
+            </div>
+
             <section id="millionsblackvoices">
                 <h3>12 Millons Black Voices</h3>
                
                 <div id="galeria1">
-                    <figure onclick="setImagenActual(1)">
+                    <figure onclick="openImage(this)">
                         <img src="img/12MillionBlackVoices/1.jpg" alt="">
                         <figcaption>Sharecroppers, Eutaw, Alabama. July 1936</figcaption>
                     </figure>
-                    <figure onclick="setImagenActual(2)">
+                    <figure onclick="openImage(this)">
                         <img src="img/12MillionBlackVoices/2.jpg" alt="">
                         <figcaption>Hoe Culture, Alabama. June 1936</figcaption>
                     </figure>
-                    <figure onclick="setImagenActual(3)"> 
+                    <figure onclick="openImage(this)"> 
                         <img src="img/12MillionBlackVoices/3.jpg" alt="">
                         <figcaption>Randolph County, North Carolina. July 1939</figcaption>
                     </figure>
-                    <figure onclick="setImagenActual(4)">
+                    <figure onclick="openImage(this)">
                         <img src="img/12MillionBlackVoices/4.jpg" alt="">
                         <figcaption>Cotton Hoers. 1937</figcaption>
                     </figure>     
-                    <figure class="customsize1" onclick="setImagenActual(5)">
+                    <figure class="customsize1" onclick="openImage(this)">
                         <img src="img/12MillionBlackVoices/5.jpg" alt="">
                         <figcaption>Plantation Overseer and his Field Hands, Mississippi Delta. June 1936</figcaption>
                     </figure>  
-                </div>
-
-                <!--Ventana modal -->
-                <div id="modal">
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <span id="cerrar" onclick="cerrarVentana()">X</span>
                 </div>
 
             </section>
@@ -81,69 +82,61 @@
             <section id="landofthefree">
                 <h3>Land of the Free</h3>
                 <div id="galeria1">
-                        <figure onclick="setImagenActual(1)">
-                            <img src="img/LandoftheFree/1.jpg" alt="">
-                            <figcaption>Ditched, Stalled and Stranded, San Joaquin Valley, California. February 1936</figcaption>
-                        </figure>
-                        <figure onclick="setImagenActual(2)">
-                            <img src="img/LandoftheFree/2.jpg" alt="">
-                            <figcaption>Daughter of Migrant Tennessee Coal Miner Living In American River Camp near Sacramento, California. Novermber 1936</figcaption>
-                        </figure>           
-                        <figure onclick="setImagenActual(3)">
-                            <img src="img/LandoftheFree/3.jpg" alt="">
-                            <figcaption>Six Tenant Farmers without Farms, Hardeman County, Texas. 1937</figcaption>
-                        </figure>
-                        <figure onclick="setImagenActual(4)">
-                            <img src="img/LandoftheFree/4.jpg" alt="">
-                            <figcaption>Drought Refugee, California. March 1937</figcaption>
-                        </figure>
-                        <figure class="customsize1" onclick="setImagenActual(5)">
-                            <img src="img/LandoftheFree/5.jpg" alt="">
-                            <figcaption>Arkansas Sharecroppers. 1936-7</figcaption>
-                        </figure>
-                    </div>
-                    <!--Ventana modal -->
-                    <div id="modal">
-                        <figure>
-                            <img src="" alt="">
-                            <figcaption></figcaption>
-                        </figure>
-                        <span id="cerrar" onclick="cerrarVentana()">X</span>
-                    </div>
-                </section>
+                    <figure onclick="openImage(this)">
+                        <img src="img/LandoftheFree/1.jpg" alt="">
+                        <figcaption>Ditched, Stalled and Stranded, San Joaquin Valley, California. February 1936</figcaption>
+                    </figure>
+                    <figure onclick="openImage(this)">
+                        <img src="img/LandoftheFree/2.jpg" alt="">
+                        <figcaption>Daughter of Migrant Tennessee Coal Miner Living In American River Camp near Sacramento, California. Novermber 1936</figcaption>
+                    </figure>           
+                    <figure onclick="openImage(this)">
+                        <img src="img/LandoftheFree/3.jpg" alt="">
+                        <figcaption>Six Tenant Farmers without Farms, Hardeman County, Texas. 1937</figcaption>
+                    </figure>
+                    <figure onclick="openImage(this)">
+                        <img src="img/LandoftheFree/4.jpg" alt="">
+                        <figcaption>Drought Refugee, California. March 1937</figcaption>
+                    </figure>
+                    <figure class="customsize1" onclick="openImage(this)">
+                        <img src="img/LandoftheFree/5.jpg" alt="">
+                        <figcaption>Arkansas Sharecroppers. 1936-7</figcaption>
+                    </figure>
+                </div>
+            </section>
             
             <section id="life">
                 <h3>Life</h3>
                 <div id="galeria1">
-                    <figure onclick="setImagenActual(1)">
+                    <figure onclick="openImage(this)">
                         <img src="img/Life/1.jpg" alt="">
                         <figcaption>Gunlock, Utah. 1953</figcaption>
                     </figure>
-                    <figure onclick="setImagenActual(2)">
+                    <figure onclick="openImage(this)">
                         <img src="img/Life/2.jpg" alt="">
                         <figcaption>Toquerville, Utah. 1953</figcaption>
                     </figure>
-                    <figure onclick="setImagenActual(1)">
+                    <figure onclick="openImage(this)">
                         <img src="img/Life/3.jpg" alt="">
                         <figcaption>Gunlock, Utah. 1953</figcaption>
                     </figure>
-                     <figure onclick="setImagenActual(1)">
+                     <figure onclick="openImage(this)">
                         <img src="img/Life/4.jpg" alt="">
                         <figcaption>Gunlock, Utah. 1953</figcaption>
                     </figure>
-                    <figure onclick="setImagenActual(1)">
+                    <figure onclick="openImage(this)">
                         <img src="img/Life/5.jpg" alt="">
                         <figcaption>Irish Child, County Clare, Ireland. 1954</figcaption>
                     </figure> 
-                    <figure onclick="setImagenActual(1)">
+                    <figure onclick="openImage(this)">
                         <img src="img/Life/6.jpg" alt="">
                         <figcaption>County Clare, Ireland. 1954</figcaption>
                     </figure>                   
-                    <figure onclick="setImagenActual(1)">
+                    <figure onclick="sopenImage(this)">
                         <img src="img/Life/7.jpg" alt="">
                         <figcaption>County Clare, Ireland. 1954</figcaption>
                     </figure> 
-                    <figure onclick="setImagenActual(1)">
+                    <figure onclick="openImage(this)">
                         <img src="img/Life/8.jpg" alt="">
                         <figcaption>Boy, Western Ireland. 1954</figcaption>
                     </figure> 

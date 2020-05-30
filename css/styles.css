@@ -149,8 +149,6 @@ h2 {
     font-size: 60px;
     line-height: 80px;
     letter-spacing: 0.05em;
-    padding-bottom: 2em;
-    
 }
 
 h3 {
@@ -229,8 +227,8 @@ p{
     display: flex;
     align-items: flex-end;
     padding-bottom: 1.5em;
+    overflow: hidden;
 }
-
 
 #donde  > div > div.info > h2 {
     padding-top: 1em;
@@ -250,8 +248,44 @@ p{
 }
 
 #donde > div > div.mapa {
-    padding: 5em; 
-    padding-bottom: 0em; 
+    display: flex;
+    position: relative;
+    align-items: center;
+    left: 30vw;
+    padding: 0 0 0 1em; 
+    padding-bottom: 0em;
+}
+
+#donde > div > div > iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6666;
+    padding: 4em;
+    box-sizing: content-box;
+}
+
+#donde > div > div.mapa > a {
+    width: 10px;
+    padding:0;
+    left: 2em;
+    position: relative;
+    outline: none;
+    transform: rotate(180deg); 
+}
+
+#donde > div > div.mapa > a > p {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    
+}
+
+#donde > div > div.mapa > a >p:hover{
+    color:white;
+    transform: scale(1.4, 1.4);
 }
 
 

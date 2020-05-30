@@ -111,7 +111,7 @@ window.onscroll = function () {
 
         
         
- function openMenu() {
+function openMenu() {
     "use strict";
     //Buscamos los li y los guardamos en una variable
     var opciones = document.getElementById("menu").firstElementChild.children;
@@ -152,7 +152,7 @@ function openedMenu() {
     for (i = 1; i < opciones.length; i = i + 1) {
         opciones[i].style.display = "block";
     }
-} */
+} 
 
  
 window.onresize = function () {

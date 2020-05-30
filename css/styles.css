@@ -73,6 +73,8 @@ a {
     position: fixed;
     padding-top: 2em;
     top:0;
+    background-color: rgba(0,0,0,0.9);
+    padding-bottom: 2em;
 }
 
 #menu > a {
@@ -142,6 +144,7 @@ h2 {
     font-size: 60px;
     line-height: 80px;
     letter-spacing: 0.05em;
+    padding-bottom: 2em;
     
 }
 
@@ -149,7 +152,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 29px;
     letter-spacing: 0.2em;
     color: #000000;
@@ -159,7 +162,7 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 10x;
     letter-spacing: 0.44px;
     color: #F2F2F2;
@@ -179,6 +182,7 @@ p{
 #quien > div {
     display: flex;
     align-items: flex-end;
+    padding-bottom: 1.5em;
 }
 
 #quien > div > div {
@@ -219,19 +223,16 @@ p{
 #donde > div {
     display: flex;
     align-items: flex-end;
-    overflow: hidden;
+    padding-bottom: 1.5em;
 }
 
-#donde > div > div > h1 {
-    color: black;
-    padding-bottom: 1em;
-}
 
-#donde > div > div > div > h2 {
+#donde  > div > div.info > h2 {
     padding-top: 1em;
+    color: #CC5252;
 }
 
-#donde > div > div > div > p {
+#donde > div > div.info > p {
     color: gray;
 }
 
@@ -239,45 +240,15 @@ p{
     font-size: 0.9em;
 }
 
+#donde > div >  div {
+    flex: 50%;
+}
 
 #donde > div > div.mapa {
-    display: flex;
-    position: relative;
-    align-items: center;
-    left: 30vw;
+    padding: 5em; 
+    padding-bottom: 0em; 
 }
 
-#donde > div > div > iframe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FF6666;
-    padding: 4em;
-    box-sizing: content-box;
-}
-
-#donde > div > div.mapa > a {
-    width: 10px;
-    padding:0;
-    left: 2em;
-    position: relative;
-    outline: none;
-    transform: rotate(180deg); 
-}
-
-#donde > div > div.mapa > a > p {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: black;
-    text-decoration: none;
-    margin: 0;
-    
-}
-
-#donde > div > div.mapa > a >p:hover{
-    color:white;
-    transform: scale(1.4, 1.4);
-}
 
 
 /* Maquetación Expo */
@@ -293,6 +264,7 @@ p{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    padding-bottom: 1.5em;
 }
 
 #expo > div > div:last-child {
@@ -748,95 +720,8 @@ footer > section > form {
 @media screen and (max-width: 900px) {
     
 
-.galeria > figure {
-    flex: 50%;
-}
-    
-.galeria1 > figure {
-    flex: 30%;
-}
-   
-     
-#menu > ul {
-    max-width: 600px;
-    margin: auto;
-}
-  
-h1 {
-    font-size: 55px;
-}
-
-section {
-    padding: 1em;
-    padding-top: 3em;
-}
-
-#inicio > div {
-    flex-direction: column;
-    align-items: center;
-}
-
-#inicio > div > div.galeria2 {
-    width: 70vh;
-    padding-bottom: 3em;
-}
-
-     
-}
-
-#menu > ul > li:first-child {
-    display: none;
-}
-
 @media screen and (max-width: 600px) {
-    section {
-        height: auto;
-}
 
-#expo > div > div.galeria {
-    width: 50vh;
-    padding-bottom: 2em;
-}
-   
-.galeria {
-    max-width: 600px;
-    justify-content: center;
-}
-    
-.galeria > figure {
-    flex: 100%;
-}
-    
-.galeria1 {
-    max-width: 600px;
-    justify-content: center;
-}
-    
-.galeria1 > figure {
-    flex: 100%;
-}
-
-header {
-    display: flex;
-    background-color: black;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-}
-    
-.wrapper {
-    display: none;
-    }
- 
-    
-h1 {
-font-size: 0.5em;
-    }
-
-p {
-    font-size: 0.5em;
-    }
     
     /*  Ponemos los elementos del menú en vertical */
 #menu > ul {
@@ -851,19 +736,8 @@ p {
 #menu > ul > li:not(:first-child) {
     display: none;
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

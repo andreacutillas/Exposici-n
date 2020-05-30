@@ -1,7 +1,6 @@
-function setImagenActual(n) {
+function openImage(figure) {
     "use strict";
-    var figure = document.getElementById("galeria1").children[n - 1];
-
+    var body = document.getElementsByTagName("body")[0];
 
     //Se busca la ruta de la imagen
     var ruta_imagen = figure.firstElementChild.getAttribute("src");
@@ -16,64 +15,75 @@ function setImagenActual(n) {
 
     //Se muestra la ventana modal
     document.getElementById("modal").style.display = "flex";
+
+    body.style.position = "static";
+    body.style.height = "100%";
+    body.style.overflow = "hidden";
 }
 
 /**
  * Oculta la ventana modal
  */
 function cerrarVentana() {
+    var body = document.getElementsByTagName("body")[0];
     "use strict";
     document.getElementById("modal").style.display = "none";
-}
+    body.style.position = "inherit";
+	body.style.height = "auto";
+	body.style.overflow = "visible";
+};
 
 
+function toggleMapa() {
+    
+    var mapa = document.getElementsByClassName("mapa")[0] ;
 
-
-
-
-
-
-/*function goTo(section, elementNumber) {
-    "use strict";
-    var scroll = document.getElementById(section).offsetTop - 64;
-    window.scrollTo(0, scroll);
-    var menuElements = document.getElementById("menu2").firstElementChild.children;
-    for (var i = 0; i < menuElements.length; i = i + 1) {
-        menuElements[i].className = "";
+    if (mapa.style.left == "30vw") {
+        mapa.style.left = "0vw";
+    } else {
+        mapa.style.left = "30vw";
     }
-    menuElements[elementNumber - 1].className = "active";
-}
+} 
 
-function changeOpacity() {
+
+
+function changeMenuColor() {
     "use strict";
-    var opacity = 0;
+
+    var menu = document.getElementById("menu");
+    var scroll = window.scrollY + menu.offsetHeight;
+
+    // get all sections
+    var sections = document.getElementsByTagName("section");
+
+    // identify current section
+    var current_section;
     var i;
-    var scroll = window.scrollY;
-    var max_scroll = window.innerHeight - 60;
-    if (scroll <= max_scroll) {
-        opacity = scroll / max_scroll;
-        var menu = document.getElementById("menu2");
-        menu.style.backgroundColor = "rgba(151, 221, 228, " + opacity + ")";
+    for (i = 0; i < sections.length; i++) {
+        if (scroll >= sections[i].offsetTop) {
+            current_section = sections[i];
+            var bg = sections[i].style.backgroundColor;
+        }
+    } 
+
+    if (current_section) {
+        menu.style.backgroundColor = window.getComputedStyle(current_section).backgroundColor;
+        console.log("current section: " + current_section.getAttribute("id"));    
+    } else {
+        console.log("no section"); 
+        menu.style.backgroundColor = "rgba(255, 255, 255, 0)";
     }
+    
+
 }
 
-
 window.onscroll = function () {
     "use strict";
-    changeOpacity();
+    changeMenuColor();
 };
 
-*/
 
-/*
- 
 
-window.onscroll = function () {
-    "use strict";
-    mapa();
-};
-
-*/
 /*
 function isElementVisible(elementToBeChecked) {
     var TopView = window.scrollTop();

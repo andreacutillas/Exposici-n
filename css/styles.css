@@ -112,6 +112,10 @@ a {
     text-decoration: none;
 }
 
+#menu > ul > li:first-child {
+    display: none;
+    }
+
 /* ESTILOS PARA LA PÁGINA PRINCIPAL */
 
 /* Maquetación general de las secciones */
@@ -726,16 +730,19 @@ footer > section > form {
     /*  Ponemos los elementos del menú en vertical */
 #menu > ul {
     flex-direction: column;
+    font-size: 1.5em;
     }
 
     /* Mostramos la opción del menú con el icono y ocultamos el resto de opciones */
 #menu > ul > li:first-child {
     display: block;
+    color: white;
     }
 
 #menu > ul > li:not(:first-child) {
     display: none;
     }
+    
 
 }
 

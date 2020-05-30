@@ -107,23 +107,11 @@ window.onscroll = function () {
     if (expo) $("#menu").css("background", "#CC5252");
 
 };
+*/ 
 
-
-<nav id="menu">
-            <a class="active" href=index.html>DOROTHEA<strong>LANGE</strong></a>
-            <nav id="menu2">
-                <ul>
-                    <li onclick="goTo('quien', 1)">¿QUIÉN?</a></li>
-                    <li onclick="goTo('donde', 2)">¿DÓNDE?</li>
-                    <li onclick="goTo('expo', 3)">EXPO</li>
-                </ul>
-            </nav>  
-        </nav>
-*/      
         
         
-        
-/* function openMenu() {
+ function openMenu() {
     "use strict";
     //Buscamos los li y los guardamos en una variable
     var opciones = document.getElementById("menu").firstElementChild.children;
@@ -145,9 +133,9 @@ function closeMenu() {
             opciones[i].style.display = "none";
         }
     }
-} */
+} 
 
-/* function menu() {
+ function menu() {
     "use strict";
     if (document.getElementById("menu").firstElementChild.lastElementChild.style.display === "block") {
         closeMenu();
@@ -166,7 +154,7 @@ function openedMenu() {
     }
 } */
 
-/* 
+ 
 window.onresize = function () {
     "use strict";
     if (window.innerWidth <= 700) {
@@ -175,7 +163,7 @@ window.onresize = function () {
         openedMenu();
     }
 }
- */
+ 
         
         
         

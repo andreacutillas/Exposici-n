@@ -727,6 +727,20 @@ footer > section > form {
 @media screen and (max-width: 600px) {
 
     
+
+.wrapper  {
+    display: none;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    padding-left: 3em;
+    padding-top: 38em; 
+    padding-bottom: 5em;
+} 
+    
     /*  Ponemos los elementos del menú en vertical */
 #menu > ul {
     flex-direction: column;

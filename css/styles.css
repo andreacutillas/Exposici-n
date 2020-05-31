@@ -842,33 +842,91 @@ footer > section > form {
     
 
 @media screen and (max-width: 600px) {
+    
+h1 {
+    font-size: 70px;
+    line-height: 65px;
+    letter-spacing: -2px;
 
-    .wrapper  {
-        display: none;
     }
+    
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+}
 
-    header {
-        width: 100vw;
-        height: 100vh;
-        background-color: black;
-        padding-left: 3em;
-        padding-top: 38em; 
-        padding-bottom: 5em;
-    } 
+h3 {
+   padding-left: 3em;
+    
+    
+}
+   
+    
+p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.50px;
+    margin-top:2em;
+} 
+    
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    color: #FF6666;
+}  
+    
+/* MAQUETACIÓN DEL HEADER */
+    
+.wrapper  {
+    display: none;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    padding-left: 3em;
+    padding-top: 20em; 
+    padding-bottom: 5em;
+} 
+
+/* MAQUETACIÓN DEL MENÚ */
         
     /*  Ponemos los elementos del menú en vertical */
-    #menu > ul {
-        flex-direction: column;
-        font-size: 1.5em;
+#menu > ul {
+    flex-direction: column;
+    font-size: 1.5em;
     }
 
     /* Mostramos la opción del menú con el icono y ocultamos el resto de opciones */
-    #menu > ul > li:first-child {
-        display: block;
-        color: white;
-    }
+#menu > ul > li:first-child {
+    display: block;
+    color: white;
+}
 
-    #menu > ul > li:not(:first-child) {
-        display: none;
-    }
+#menu > ul > li:not(:first-child) {
+    display: none;
+}
+    
+/* Maquetación SECCIONES */
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 4em;
+}
+
+    
 }

@@ -88,7 +88,7 @@ header {
     min-height: 100vh;
     background-color: black;
     opacity: 0.8;
-    padding-left: 10em;
+    padding: 10em;
     padding-top: 20em; 
     padding-bottom: 5em;
 } 
@@ -113,12 +113,11 @@ strong {
 
 /* MAQUETACIÓN DEL MENÚ */
 #menu {
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     position: fixed;
     padding-top: 2em;
     top:0;
-    background-color: rgba(0,0,0,0.9);
     padding-bottom: 2em;
 }
 
@@ -450,16 +449,9 @@ footer > section > form {
 
 /* Segundo menú  */
   
-#menuExpo {
-    width: 100%;
-    z-index: 1;
-    position: absolute;
-    padding-top: 2em;
-    top:0;
-    background-color: #F2F2F2;
-}
+
     
-#menuExpo > a {
+#menu > a#dos {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 300;
@@ -470,39 +462,23 @@ footer > section > form {
     text-decoration: none;
 }
     
-#menuExpo > ul {
-    height: 2em;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-    
-#menuExpo > ul > li {
-    list-style: none;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-    
-#menuExpo > ul > li > a {
+#menu > ul#tres > li > a {
     color: black;
-    letter-spacing: 0.2em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    position: relative;
 }
-#menuExpo > a:hover {
+
+#menu > a#dos:hover {
     color: #FF6666;
 }
 
-#menuExpo > ul > li > a:hover {
+#menu > ul> li#expoOcultar {
+    display: none;
+}
+
+#menu > ul#tres > li > a:hover {
     color: #FF6666;
 }
 
-#menuExpo > ul > li > a:after {
+#menu > ul#tres > li > a:after {
     position: absolute;
     bottom: 1px;
     left: 0px;
@@ -515,11 +491,11 @@ footer > section > form {
     transform: translateY(20px);        
 }
 
-#menuExpo > ul > li > a:hover:after{
+#menu > ul#tres > li > a:hover:after{
     opacity:1;
     transform: translateY(15px);
-
 }
+
 
 
 
@@ -837,96 +813,226 @@ footer > section > form {
 }
 
 @media screen and (max-width: 900px) {
-
 }
     
 
 @media screen and (max-width: 600px) {
-    
-h1 {
-    font-size: 70px;
-    line-height: 65px;
-    letter-spacing: -2px;
 
-    }
+    h1 {
+        font-size: 70px;
+        line-height: 65px;
+        letter-spacing: -2px;
     
-h2 {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
-    letter-spacing: 0.05em;
-}
-
-h3 {
-   padding-left: 3em;
-    
-    
-}
-   
-    
-p{
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    letter-spacing: 0.50px;
-    margin-top:2em;
-} 
-    
-
-a {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 41px;
-    letter-spacing: 0.25px;
-    text-decoration: none;
-    color: #FF6666;
-}  
-    
-/* MAQUETACIÓN DEL HEADER */
-    
-.wrapper  {
-    display: none;
-}
-
-header {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    padding-left: 3em;
-    padding-top: 20em; 
-    padding-bottom: 5em;
-} 
-
-/* MAQUETACIÓN DEL MENÚ */
+        }
         
-    /*  Ponemos los elementos del menú en vertical */
-#menu > ul {
-    flex-direction: column;
-    font-size: 1.5em;
+    h2 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 50px;
+        letter-spacing: 0.05em;
+    }
+    
+    h3 {
+       padding-left: 3em;
+        
+        
+    }
+       
+        
+    p{
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0.50px;
+        margin-top:2em;
+    } 
+        
+    
+    a {
+        font-size: 15px;
+        line-height: 41px;
+    }  
+        
+    /* MAQUETACIÓN DEL HEADER */
+        
+    .wrapper  {
+        display: none;
+    }
+    
+    header {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        padding-left: 3em;
+        padding-top: 20em; 
+        padding-bottom: 5em;
+    } 
+    
+    /* MAQUETACIÓN DEL MENÚ */
+            
+        /*  Ponemos los elementos del menú en vertical */
+
+    #menu {
+        width: 100vw;
+        padding-top: 2em;
+        height: 1em;    
+        display: flex;
+        align-items: center;
     }
 
+
+    #menu > ul {
+        flex-direction: column;
+        font-size: 1.5em;
+        padding-right: 1.5em;
+        position: absolute;
+        
+    }
+
+    #menu > a {
+        padding-left: 7em;
+        text-align: center;
+        display: flex;
+    }
+    #menu > ul >li {
+        padding-right: 0;
+        width: 100%;
+        background-color: rgba(17, 17, 17, 0.452);
+    }
+
+    #menu > ul > li#primero {
+        padding-top: 8em;
+    }
+
+    #menu > ul > li:last-child {
+        padding-bottom: 1em;
+        padding-right: 2em;
+    }
+    
     /* Mostramos la opción del menú con el icono y ocultamos el resto de opciones */
-#menu > ul > li:first-child {
-    display: block;
-    color: white;
-}
-
-#menu > ul > li:not(:first-child) {
-    display: none;
-}
+    #menu > ul > li:first-child {
+        display: block;
+        color: white;
+    }
     
-/* Maquetación SECCIONES */
-section {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 4em;
-}
+    #menu > ul > li:not(:first-child) {
+        display: none;
+    }
 
+    .fa-bars {
+        position: absolute;
+        top: 29%;
+        
+    }
     
+    .fa-bars:hover {
+        color: #FF6666;
+        cursor: pointer;
+    }
+    
+        
+    /* Maquetación SECCIONES */
+    section {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 4em;
+    }
+
+    #quien > div {
+        padding-right: 3em;
+        padding-left: 3em;
+        width: 100vw;
+    }
+    #imagenDorothea {
+        display: none;
+    }
+
+    #donde {
+        padding-right: 3em;
+    }
+    
+    #donde > div {
+        padding-right: 3em;
+        padding-left: 3em;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    #donde > div {
+        flex: 100%;
+    }
+
+    .mapa{
+        display: none;
+        left: 0vw;
+        padding: 0;
+    }
+
+    .mapa > iframe{
+        width: 100%;
+        height: 5%;
+        padding: 1em;
+
+    }
+
+   #menu > ul#tres > li >i {
+        color: black;
+        
+    }
+
+    #menu > ul#tres > li >i:hover {
+        color: #FF6666;
+        
+    }
+
+    #menu > ul#tres > li {
+        
+        background-color: rgba(250, 250, 250, 0.897);
+    }
+
+
+    .galeria{
+        display: none;
+    }
+
+    #expo > div > div:last-child {
+        width: 100%;
+    }
+
+    #expo > div > div > a {
+        padding: 0.6em 3em 0.6em 3em;
+        font-size: 0.6em;
+
+    }
+
+    #contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2em;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    #contact > div > div.direcciones1 > div:last-child > p{
+        margin-top: 0;
+    }
+
+    #contact > div > div.direcciones2 > div:last-child > p{
+        margin-top: 0;
+    }
+
+    #contact > div > div.direcciones1{
+        padding: 0;
+        padding-bottom: 2em;
+    }
+
+    .copy {
+        color: rgb(95, 95, 95);
+        padding-top: 2em;
+    }
 }

@@ -31,12 +31,25 @@
             </div>
         </section>
         
-        <nav id="menuExpo">
-            <a href="index.html">DOROTHEA<strong>LANGE</strong></a>
-            <ul>
-                <li><a href="index.html#quien">¿QUIÉN?</a></li>
-                <li><a href="index.html#donde">¿DÓNDE?</a></li>
-                <li><a href="#contact">CONTACTO</a></li>
+        <nav id="menu">
+            <a id="dos" href="index.html">DOROTHEA<strong>LANGE</strong></a>
+            
+            <ul id="tres">
+                <li>
+                    <i class="fas fa-bars" onclick="menu()"></i>
+                </li> 
+                <li id="primero">
+                    <a href="index.html#quien" onclick="closeMenu()"> ¿QUIÉN? </a>
+                </li>
+                <li>
+                    <a href="index.html#donde" onclick="closeMenu()"> ¿DÓNDE? </a>
+                </li>
+                <li id="expoOcultar">
+                    <a href="#expo" onclick="closeMenu()"> EXPO </a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="closeMenu()"> CONTACTO </a>
+                </li>
             </ul>
         </nav>
        

@@ -114,7 +114,7 @@ window.onscroll = function () {
 function openMenu() {
     "use strict";
     //Buscamos los li y los guardamos en una variable
-    var opciones = document.getElementById("menu").firstElementChild.children;
+    var opciones = document.getElementById("menu").children[1].children;
     //La variable i nos ayudará a recorrer el bucle e ir presentando las opciones
     var i;
     for (i = 0; i < opciones.length; i = i + 1) {
@@ -126,7 +126,7 @@ function closeMenu() {
     "use strict";
     //Solo cerramos el menú cuando la pantalla es pequeña (menor a 700px de ancho)
     if (window.innerWidth <= 700) {
-        var opciones = document.getElementById("menu").firstElementChild.children;
+        var opciones = document.getElementById("menu").children[1].children;
         var i;
         opciones[0].style.display = "block";
         for (i = 1; i < opciones.length; i = i + 1) {
@@ -137,7 +137,7 @@ function closeMenu() {
 
  function menu() {
     "use strict";
-    if (document.getElementById("menu").firstElementChild.lastElementChild.style.display === "block") {
+    if (document.getElementById("menu").children[1].lastElementChild.style.display === "block") {
         closeMenu();
     } else {
         openMenu();
@@ -146,7 +146,7 @@ function closeMenu() {
 
 function openedMenu() {
     "use strict";
-    var opciones = document.getElementById("menu").firstElementChild.children;
+    var opciones = document.getElementById("menu").children[1].children;
     var i;
     opciones[0].style.display = "none";
     for (i = 1; i < opciones.length; i = i + 1) {

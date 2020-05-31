@@ -10,6 +10,63 @@ img {
     vertical-align: middle;
 }
 
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 128px;
+    letter-spacing: -2px;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    letter-spacing: 0.2em;
+    color: #000000;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.50px;
+    color: #F2F2F2;
+    margin-top:2em;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 41px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    color: #FF6666;
+}
+
+
+/* MAQUETACIÓN DEL HEADER */
+
 /* Video fondo */
 .wrapper {
     position: absolute;
@@ -36,6 +93,14 @@ header {
     padding-bottom: 5em;
 } 
 
+header > div > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    opacity: 0.6;
+}
+
 header > div > div > h1 {
     color: white;
 }
@@ -44,30 +109,9 @@ strong {
     font-family: 'Montserrat', sans-serif;
 }
 
-header > div > p{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 5px;
-    color: white;
-    opacity: 0.6;
-}
-
-a {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 41px;
-    letter-spacing: 0.25px;
-    text-decoration: none;
-    color: #FF6666;
-}
 
 
-/* Maquetación del Menú */
+/* MAQUETACIÓN DEL MENÚ */
 #menu {
     width: 100%;
     z-index: 1;
@@ -111,15 +155,45 @@ a {
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     text-decoration: none;
+    position: relative;
+}
+
+#menu > ul > li > a:after {
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);        
+}
+
+#menu > a:hover {
+    color: #FF6666;
+}
+
+#menu > ul > li > a:hover {
+    color: #FF6666;
+}
+
+
+
+#menu > ul > li > a:hover:after{
+    opacity:1;
+    transform: translateY(15px);
+
 }
 
 #menu > ul > li:first-child {
     display: none;
-    }
+}
 
 /* ESTILOS PARA LA PÁGINA PRINCIPAL */
 
-/* Maquetación general de las secciones */
+/* Maquetación SECCIONES */
 section {
     width: 100%;
     min-height: 100vh;
@@ -127,56 +201,11 @@ section {
     flex-direction: column;
     padding-left: 10em;
     padding-right: 10em;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 128px;
-    letter-spacing: -2px;
-
-}
-
-h2 {
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 80px;
-    letter-spacing: 0.05em;
-}
-
-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 29px;
-    letter-spacing: 0.2em;
-    color: #000000;
-}
-
-p{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 10x;
-    letter-spacing: 0.44px;
-    color: #F2F2F2;
-    margin-top:2em;
-}
-
-/* Maquetación Quien */
-
-
+/* Maquetación: Sección QUIEN */
 #quien {
-    /*background-color: rgba(196, 196, 196);*/
     background: #CC5252;
     align-items: center;
     justify-content: flex-end;
@@ -195,8 +224,7 @@ p{
 #quien > div > div > figure  {
    display: flex;
    align-items: center;
-   justify-content: center;
-    
+   justify-content: center;  
 } 
 
 #quien > div > div > figure > img {
@@ -213,10 +241,10 @@ p{
     margin-top:2em;
 }
 
-/* Maquetación Donde */
+/*Maquetación: Sección DONDE */
 
 #donde {
-    background: rgba(196, 196, 196, 0.2);
+    background: #d6d6d6;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -226,28 +254,22 @@ p{
 #donde > div {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 1.5em;
-    overflow: hidden;
 }
 
-#donde  > div > div.info > h2 {
+.info > h2 {
     padding-top: 1em;
     color: #CC5252;
 }
 
-#donde > div > div.info > p {
-    color: gray;
+.info > p {
+    color: rgb(97, 96, 96);
 }
 
-#donde > div > div > div > a {
+.info > a {
     font-size: 0.9em;
 }
 
-#donde > div >  div {
-    flex: 50%;
-}
-
-#donde > div > div.mapa {
+.mapa {
     display: flex;
     position: relative;
     align-items: center;
@@ -256,7 +278,7 @@ p{
     padding-bottom: 0em;
 }
 
-#donde > div > div > iframe {
+.mapa > iframe {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,7 +287,7 @@ p{
     box-sizing: content-box;
 }
 
-#donde > div > div.mapa > a {
+#flecha {
     width: 10px;
     padding:0;
     left: 2em;
@@ -274,7 +296,7 @@ p{
     transform: rotate(180deg); 
 }
 
-#donde > div > div.mapa > a > p {
+#flecha > p {
     font-weight: bold;
     font-size: 1.2em;
     color: black;
@@ -283,14 +305,13 @@ p{
     
 }
 
-#donde > div > div.mapa > a >p:hover{
+#flecha > p:hover{
     color:white;
     transform: scale(1.4, 1.4);
 }
 
 
-
-/* Maquetación Expo */
+/* Maquetación: Sección EXPO */
 
 #expo {
     background-color: #CC5252;
@@ -308,33 +329,33 @@ p{
 
 #expo > div > div:last-child {
     width: 50%;
-
 }
+
 #expo > div > div > p{
     padding-bottom: 3em;
 } 
 
 #expo > div > div > a {
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-
-    letter-spacing: 0.3em;
+    letter-spacing: 0.25em;
     color: white;
-    font-size: 0.7em;
+    font-size: 0.8em;
     background: #FF6666;
-
-    padding: 0.5em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding: 0.8em 4em 0.8em 4em;
     border-radius: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
 }
 
+#expo > div > div > a:hover {
+    color: #FF6666;
+    background: white;
+}
 
 .galeria {
     width: 45%;
     overflow: hidden;
     position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
 }
 
 .galeria > div {
@@ -387,7 +408,47 @@ p{
     }
 }
 
-/* ESTILOS PARA LA PÁGINA EXPO */
+
+footer {
+    background-color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    padding: 4em;
+    padding-bottom: 2em;
+    padding-left: 10em;
+    padding-right: 10em;
+    color: white;
+    font-size: 0.9em;
+}
+
+.copy {
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10em;
+}
+
+.direcciones1 > div > a > i {
+    color: #FF6666; 
+    
+}
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > div > div.direcciones1 {
+    padding-right: 20em;
+} 
+
+footer > section > form {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+}
+
+/*  MAQUETACIÓN PARA EXPO.HTML */
+
+
+/* Segundo menú  */
   
 #menuExpo {
     width: 100%;
@@ -431,17 +492,38 @@ p{
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     text-decoration: none;
+    position: relative;
+}
+#menuExpo > a:hover {
+    color: #FF6666;
 }
 
 #menuExpo > ul > li > a:hover {
-    color: #CC5252;
-    cursor: pointer;
+    color: #FF6666;
 }
 
-#menuExpo > ul > li > a.active {
-    border-bottom: black 2px solid;
-    color: black;
+#menuExpo > ul > li > a:after {
+    position: absolute;
+    bottom: 1px;
+    left: 0px;
+    width: 30%;
+    height: 3px;
+    background-color: black;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);        
 }
+
+#menuExpo > ul > li > a:hover:after{
+    opacity:1;
+    transform: translateY(15px);
+
+}
+
+
+
+/*  Maquetación: Sección CABECERA-EXPO  */
 
 #cabecera-expo {
     padding-top: 3em;
@@ -475,11 +557,7 @@ p{
     font-size: 96px;
     line-height: 128px;
     letter-spacing: -2px;
-    background-color: ;
 }
-
-/*Maquetación División Salas de la Exposición*/ 
-
 .salasExpo {
     display: flex;
     flex-wrap: wrap;
@@ -492,9 +570,7 @@ p{
     justify-content: center;
     align-items: center;
     padding: 0 5px;
-
     flex: 23%;
-    background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     border-radius: 4px;
     color: white;
@@ -502,14 +578,11 @@ p{
     box-sizing: content-box;
     margin: 1em;
     font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.9em;
     line-height: 24px;
     text-align: center;
     align-items: center;
     letter-spacing: 5px;
-
 }
 
 .salasExpo > a:nth-child(1){
@@ -559,7 +632,7 @@ p{
     transform: scale(1.1, 1.1);
 }
 
-/*Maquetación Secciones de la Galeria de la Expo*/
+/* Maquetación: Secciones GALERÍA EXPOSICIÓN*/
 
 #millionsblackvoices, #publicdefender,#thefamilyofman, #life {
     background-color: #CC5252;
@@ -579,8 +652,20 @@ p{
    color: white;
 }
 
+#migrantmother > h3 {
+    color: white;
+ }
 
-#galeria1 {
+ #sanfranciscostreets > h3 {
+    color: white;
+ }
+
+ #worklate > h3 {
+    color: white;
+ }
+
+
+.galeria1 {
     padding-top: 3em; 
     width: 100%;
     margin: 1em auto;
@@ -588,48 +673,16 @@ p{
     flex-wrap: wrap;
 }
 
-#galeria1 > figure {
+.galeria1 > figure {
     flex: 15%; 
     position: relative;
-    margin: 0.2em;
+    margin: 0.3em;
     width: 270px;
-    height: 270px;
-}
-
-#galeria1 > figure.customsize1 {
-    flex: 100%;
-}
-
-#galeria1 > figure.customsize2{
-    height: 550px;
-}
-
-#galeria1 > figure.customsize2 > img {
-    width: 100%;
-    height: 550px;
+    height: 270px; 
 }
 
 
-
-#galeria1 > figure.customsize2 > img {
-    width: 100%;
-    height: 550px;
-}
-
-#galeria1 > figure.customsize1 > img {
-    margin: 0;
-    padding-top: 0.2em;
-    position: relative;
-    vertical-align: middle;
-    object-fit: cover; 
-    object-position: (center, center);
-    width: 100%;
-    height: 270px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
-    border-radius: 4px;
-}
-
-#galeria1 > figure > img {
+.galeria1 > figure > img {
     margin: 0;
     position: relative;
     vertical-align: middle;
@@ -637,37 +690,101 @@ p{
     width: 270px;
     height: 270px; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    border-radius: 4px;   
+}
+
+.galeria1 > figure.customsize1 {
+    height: 270px;
+}
+
+.galeria1 > figure.customsize1 > img {
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    object-fit: cover; 
+    width: 100%;
+    height: 270px;
     border-radius: 4px;
+}
+
+.galeria1 > figure.customsize2{
+    height: 550px;
+}
+
+.galeria1 > figure.customsize2 > img {
+    width: 100%;
+    height: 550px;
+}
+
+.galeria1 > figure.customsize3{
+    height: 270px;
+}
+
+.galeria1 > figure.customsize3 > img {
+    width: 100%;
+    height: 270px;
+}
+
+.galeria1 > figure.customsize4{
+    height: 350px;
+    margin: 3em;
+}
+
+.galeria1 > figure.customsize4 > img {
+    width: 100%;
+    height: 350px;
+}
+
+.galeria1 > figure.customsize4 > h3 {
+    letter-spacing: 0;
+    padding-top: 1em;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
     
 }
 
+.galeria1 > figure.customsize4 > p {
+    color: rgb(121, 121, 121);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 15px;
+    margin: 0;
+}
 
-#galeria1  > figure > figcaption {
+.galeria1 > figure.customsize4 > a {
+    font-size: 15px;
+    display: flex;
+    padding: 0;
+}
+
+#publicaciones > div {
+    padding-top: 0;
+}
+
+
+.galeria1  > figure > figcaption {
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    padding: 1em;
+    margin: 0;
+    padding: 2em;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     border-radius: 4px;
-    transform: scale(2em);
-
     font-size: 0.9em;
     opacity: 0;
-    transition-duration: 0.5;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
     letter-spacing: 0.44px;
 }
 
-#galeria1 > figure:hover> figcaption {
+.galeria1 > figure:hover> figcaption {
     opacity: 1;
 }
 
@@ -719,83 +836,39 @@ p{
     cursor: pointer;
 }
 
-
-footer {
-    background-color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    padding: 4em;
-    padding-bottom: 2em;
-    padding-left: 10em;
-    padding-right: 10em;
-    color: white;
-    font-size: 0.9em;
-}
-
-.copy {
-    font-size: 0.7em;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 10em;
-}
-
-.direcciones1 > div > a > i {
-    color: #FF6666; 
-    
-}
-
-footer > div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer > div > div.direcciones1 {
-    padding-right: 20em;
-} 
-
-footer > section > form {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9em;
-}
-
 @media screen and (max-width: 900px) {
+
+}
     
 
 @media screen and (max-width: 600px) {
 
-    
+    .wrapper  {
+        display: none;
+    }
 
-.wrapper  {
-    display: none;
-}
-
-header {
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    padding-left: 3em;
-    padding-top: 38em; 
-    padding-bottom: 5em;
-} 
-    
+    header {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        padding-left: 3em;
+        padding-top: 38em; 
+        padding-bottom: 5em;
+    } 
+        
     /*  Ponemos los elementos del menú en vertical */
-#menu > ul {
-    flex-direction: column;
-    font-size: 1.5em;
+    #menu > ul {
+        flex-direction: column;
+        font-size: 1.5em;
     }
 
     /* Mostramos la opción del menú con el icono y ocultamos el resto de opciones */
-#menu > ul > li:first-child {
-    display: block;
-    color: white;
+    #menu > ul > li:first-child {
+        display: block;
+        color: white;
     }
 
-#menu > ul > li:not(:first-child) {
-    display: none;
+    #menu > ul > li:not(:first-child) {
+        display: none;
     }
-    
-
 }
-
-
-
-
-

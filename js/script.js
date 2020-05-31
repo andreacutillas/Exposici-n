@@ -40,8 +40,10 @@ function toggleMapa() {
 
     if (mapa.style.left == "30vw") {
         mapa.style.left = "0vw";
+        document.getElementById("flecha").style.transform = "rotate(0deg)";
     } else {
         mapa.style.left = "30vw";
+        document.getElementById("flecha").style.transform = "rotate(180deg)";
     }
 } 
 
@@ -73,8 +75,6 @@ function changeMenuColor() {
         console.log("no section"); 
         menu.style.backgroundColor = "rgba(255, 255, 255, 0)";
     }
-    
-
 }
 
 window.onscroll = function () {

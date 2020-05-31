@@ -15,9 +15,9 @@
     </head>
     
     <body>
-         <section id="cabecera-expo"> 
-                <p>BIENVENIDO A LA EXPOSICIÓN</p>
-                <h1>Words & Pictures</h1>
+        <section id="cabecera-expo"> 
+            <p>BIENVENIDO A LA EXPOSICIÓN</p>
+            <h1>Words & Pictures</h1>
             <div class="salasExpo">
                 <a href="#millionsblackvoices">12 MILLIONS BLACK VOICES</a>
                 <a href="#landofthefree">LAND OF THE FREE</a>
@@ -36,25 +36,15 @@
             <ul>
                 <li><a href="index.html#quien">¿QUIÉN?</a></li>
                 <li><a href="index.html#donde">¿DÓNDE?</a></li>
-                <li><a href="index.html#expo">CONTACTO</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
             </ul>
         </nav>
        
         <main>
-
-            <!--Ventana modal -->
-            <div id="modal">
-                <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <span id="cerrar" onclick="cerrarVentana()">X</span>
-            </div>
-
             <section id="millionsblackvoices">
                 <h3>12 Millons Black Voices</h3>
                
-                <div id="galeria1">
+                <div class="galeria1">
                     <figure onclick="openImage(this)">
                         <img src="img/12MillionBlackVoices/1.jpg" alt="">
                         <figcaption>Sharecroppers, Eutaw, Alabama. July 1936</figcaption>
@@ -81,7 +71,7 @@
             
             <section id="landofthefree">
                 <h3>Land of the Free</h3>
-                <div id="galeria1">
+                <div class="galeria1">
                     <figure onclick="openImage(this)">
                         <img src="img/LandoftheFree/1.jpg" alt="">
                         <figcaption>Ditched, Stalled and Stranded, San Joaquin Valley, California. February 1936</figcaption>
@@ -107,7 +97,7 @@
             
             <section id="life">
                 <h3>Life</h3>
-                <div id="galeria1">
+                <div class="galeria1">
                     <figure onclick="openImage(this)">
                         <img src="img/Life/1.jpg" alt="">
                         <figcaption>Gunlock, Utah. 1953</figcaption>
@@ -132,7 +122,7 @@
                         <img src="img/Life/6.jpg" alt="">
                         <figcaption>County Clare, Ireland. 1954</figcaption>
                     </figure>                   
-                    <figure onclick="sopenImage(this)">
+                    <figure onclick="openImage(this)">
                         <img src="img/Life/7.jpg" alt="">
                         <figcaption>County Clare, Ireland. 1954</figcaption>
                     </figure> 
@@ -145,8 +135,8 @@
                  
             <section id="migrantmother">
                 <h3>Migrant Mother</h3>
-                <div id="galeria1">
-                    <figure class="customsize2">
+                <div class="galeria1">
+                    <figure class="customsize2" onclick="openImage(this)">
                         <img src="img/MigrantMother/1.jpg" alt="">
                         <figcaption>Migrant Mother, Nipomo, California. March 1936</figcaption>
                     </figure>
@@ -155,26 +145,26 @@
             
             <section id="publicdefender">
                 <h3>Public Defender</h3>
-                <div id="galeria1">
-                    <figure>
+                <div class="galeria1">
+                    <figure onclick="openImage(this)">
                      <img src="img/PublicDefender/1.jpg" alt="">
                      <figcaption>The Witness, Alameda County Courthouse, California. 1955-7</figcaption>
                     </figure>
-                    <figure>
+                    <figure onclick="openImage(this)">
                      <img src="img/PublicDefender/2.jpg" alt="">
                      <figcaption>“Guilty, Your Honor.” Alameda  County Courthouse, California. 1955-7</figcaption>
                     </figure>
                
-                    <figure>
+                    <figure onclick="openImage(this)">
                      <img src="img/PublicDefender/3.jpg" alt="">
                      <figcaption>Black Maria, Oakland. 1955-7</figcaption>
                     </figure>
-                    <figure>
+                    <figure onclick="openImage(this)">
                      <img src="img/PublicDefender/4.jpg" alt="">
                      <figcaption>The Public Defender, Alameda  County Courthouse, California. 1955-7</figcaption>
                     </figure>
                 
-                    <figure class="customsize1">
+                    <figure class="customsize1" onclick="openImage(this)">
                      <img src="img/PublicDefender/5.jpg" alt="">
                      <figcaption>The Defendant,  Alameda  County Courthouse, California. 1955-7</figcaption>
                     </figure> 
@@ -183,18 +173,18 @@
             
             <section id="sanfranciscostreets">
                 <h3>San Francisco Streets</h3>
-                <div id="galeria1">
-                    <figure>
+                <div class="galeria1">
+                    <figure class="customsize2"  onclick="openImage(this)">
                      <img src="img/SanFranciscoStreets/1.jpg" alt="">
                      <figcaption>White Angel Bread Line, San Francisco. 1933</figcaption>
                     </figure>
                     
-                    <figure>
+                    <figure class="customsize2" onclick="openImage(this)">
                      <img src="img/SanFranciscoStreets/2.jpg" alt="">
                      <figcaption>Street Demonstration, San Francisco. 1933-4</figcaption>
                     </figure>
                
-                    <figure>
+                    <figure class="customsize2" onclick="openImage(this)">
                      <img src="img/SanFranciscoStreets/3.jpg" alt="">
                      <figcaption>Man beside Wheelbarrow, San Francisco. 1934</figcaption>
                     </figure> 
@@ -203,162 +193,153 @@
             
             <section id="thefamilyofman">
                 <h3>The Family of Man</h3>
-                <div id="galeria1">
-                    <figure>
-                     <img src="img/TheFamilyofMan/1.jpg" alt="">
-                     <figcaption>Richmond, California. 1942</figcaption>
+                <div class="galeria1">
+                    <figure onclick="openImage(this)">
+                        <img src="img/TheFamilyofMan/1.jpg" alt="">
+                        <figcaption>Richmond, California. 1942</figcaption>
                     </figure>
-                    <figure>
-                     <img src="img/TheFamilyofMan/2.jpg" alt="">
-                     <figcaption>Spring in Berkeley. 1952</figcaption>
+                    <figure onclick="openImage(this)">
+                        <img src="img/TheFamilyofMan/2.jpg" alt="">
+                        <figcaption>Spring in Berkeley. 1952</figcaption>
+                    </figure>               
+                    <figure onclick="openImage(this)">
+                        <img src="img/TheFamilyofMan/3.jpg" alt="">
+                        <figcaption>Argument in Trailer Court. 1944</figcaption>
                     </figure>
-                
-                    <figure>
-                     <img src="img/TheFamilyofMan/3.jpg" alt="">
-                     <figcaption>Argument in Trailer Court. 1944</figcaption>
-                    </figure>
-                    <figure>
-                     <img src="img/TheFamilyofMan/4.jpg" alt="">
-                     <figcaption>Filipinos Cutting Lettuce, Salinas Valley, California. June 1935</figcaption>
-                    </figure>
-                
-                    <figure class="customsize1">
-                     <img src="img/TheFamilyofMan/5.jpg" alt="">
-                     <figcaption>Mother and Child, San Francisco. 1952</figcaption>
+                    <figure onclick="openImage(this)">
+                        <img src="img/TheFamilyofMan/4.jpg" alt="">
+                        <figcaption>Filipinos Cutting Lettuce, Salinas Valley, California. June 1935</figcaption>
+                    </figure>              
+                    <figure class="customsize3" onclick="openImage(this)">
+                        <img src="img/TheFamilyofMan/5.jpg" alt="">
+                        <figcaption>Mother and Child, San Francisco. 1952</figcaption>
                     </figure> 
-                    <!--
-                    <figure>
-                     <img src="img/TheFamilyofMan/6.jpg" alt="">
-                     <figcaption>First Born, Berkeley. 1952</figcaption>
-                    </figure>
-                    -->
-                </div>
-            </section>
-            
-                
-            <section id="worklate">
-                <h3>Work Late</h3>
-                <div id="galeria1">
-                    <figure>
-                     <img src="img/WorkLate/1.jpg" alt="">
-                     <figcaption>Man Stepping from Cable Car, San Francisco. 1956</figcaption>
-                    </figure>
-                    <figure>
-                     <img src="img/WorkLate/2.jpg" alt="">
-                     <figcaption>Berryessa Valley, Napa County, California. 1956</figcaption>
-                    </figure>
-                   
-                    <figure>
-                     <img src="img/WorkLate/3.jpg" alt="">
-                     <figcaption>Terrified Horse, Napa County, California. 1956</figcaption>
-                    </figure>
-                    <figure>
-                     <img src="img/WorkLate/4.jpg" alt="">
-                     <figcaption>Walking Wounded, Oakland. 1954</figcaption>
+                    <figure class="customsize3" onclick="openImage(this)">
+                        <img src="img/TheFamilyofMan/6.jpg" alt="">
+                        <figcaption>First Born, Berkeley. 1952</figcaption>
                     </figure>
                     
-                    <figure class="customsize1">
-                     <img src="img/WorkLate/5.jpg" alt="">
-                     <figcaption>Union Square, New York. 1952</figcaption>
+                </div>
+            </section>
+                        
+            <section id="worklate">
+                <h3>Work Late</h3>
+                <div class="galeria1">
+                    <figure onclick="openImage(this)">
+                        <img src="img/WorkLate/1.jpg" alt="">
+                        <figcaption>Man Stepping from Cable Car, San Francisco. 1956</figcaption>
+                    </figure>
+                    <figure onclick="openImage(this)">
+                        <img src="img/WorkLate/2.jpg" alt="">
+                        <figcaption>Berryessa Valley, Napa County, California. 1956</figcaption>
+                    </figure>                  
+                    <figure onclick="openImage(this)">
+                        <img src="img/WorkLate/3.jpg" alt="">
+                        <figcaption>Terrified Horse, Napa County, California. 1956</figcaption>
+                    </figure>
+                    <figure onclick="openImage(this)">
+                        <img src="img/WorkLate/4.jpg" alt="">
+                        <figcaption>Walking Wounded, Oakland. 1954</figcaption>
+                    </figure>
+                    <figure class="customsize1" onclick="openImage(this)">
+                        <img src="img/WorkLate/5.jpg" alt="">
+                        <figcaption>Union Square, New York. 1952</figcaption>
                     </figure>
                 </div>
             </section>
             
             <section id="publicaciones">
                 <h3>Publicaciones</h3>
-                <div id="galeria1">
-                    <figure>
+                <div class="galeria1">
+                    <figure class="customsize4">
                         <img src="img/Publicaciones/1.jpg" alt="Portada libro 1">
+                        <h3>Dorothea Lange: Migrant Mother</h3>
+                        <p>Sarah Hermanson Meister, 2019
+                            Paperback, 48 pages</p>
+
+                        <a href="https://assets.moma.org/d/pdfs/W1siZiIsIjIwMTkvMDIvMTIvMnJ1MXM3b3l6cl9Nb01BX0xhbmdlX1BSRVZJRVcucGRmIl1d/MoMA_Lange_PREVIEW.pdf?sha=d08840987b5b2fc2">Leer una muestra</a>
+                        <a href="https://store.moma.org/books/moma-publications/dorothea-lange-migrant-mother---paperback/900066-900066.html?_ga=2.69442640.1339555440.1590892312-677876911.1589535457">Comprar libro</a>
                     </figure>
-                    <figure>
-                     <img src="img/Publicaciones/1.3.jpg" alt="Interior libro 1">
+                    <figure class="customsize4">
+                        <img src="img/Publicaciones/2.jpg" alt="Portada libro 2">
+                        <h3>Dorothea Lange: Words & Pictures</h3>
+                        <p>Sarah Hermanson Meister, 2020
+                             Hardcover, 176 pages</p>
+                        <a href="https://assets.moma.org/d/pdfs/W1siZiIsIjIwMjAvMDMvMTgvOWV5Mng1MnA4dV9Nb01BX0xhbmdlX1BSRVZJRVcucGRmIl1d/MoMA%20Lange%20PREVIEW.pdf?sha=e3a96ce62f82028e" >Leer gratis</a>
+                        <a href="https://store.moma.org/books/exhibition-catalogues/dorothea-lange-words-pictures---hardcover/900104-900104.html?_ga=2.178467300.1339555440.1590892312-677876911.1589535457">Comprar libro</a>
                     </figure>
-                    <figure>
-                     <img src="img/Publicaciones/1.2.jpg" alt="Contraportada libro 1">
-                    </figure>
-                    <figure>
-                         <img src="img/Publicaciones/2.jpg" alt="Portada libro 2">
-                    </figure>
-                    <figure>
-                     <img src="img/Publicaciones/2.3.jpg" alt="Interior libro 2">
-                    </figure>
-                    <figure>
-                     <img src="img/Publicaciones/2.2.jpg" alt="Contraportada libro 2">
-                    </figure>
-                    <figure>
-                         <img src="img/Publicaciones/3.jpg" alt="Portada libro 3">
+                    
+                    <figure class="customsize4">
+                        <img src="img/Publicaciones/3.jpg" alt="Portada libro 3">
+                        <h3>Last West: Roadsongs for Dorothea Lange</h3>
+                        <p>Tess Taylor, 2020 Paperback, 64 pages</p>
+                        <a href="https://store.moma.org/books/moma-publications/last-west-roadsongs-for-dorothea-lange---paperback/900109-900109.html?_ga=2.72546771.1339555440.1590892312-677876911.1589535457">Comprar libro</a>
                     </figure> 
-                    <figure>
-                     <img src="img/Publicaciones/3.2.jpg" alt="Interior libro 3">
-                    </figure>
-                    <figure>
-                     <img src="img/Publicaciones/3.1.jpg" alt="Contraportada libro 3">
-                    </figure>
+                    
                 </div>
-          </section>
-            </main>
+            </section>
+
+            <!--Ventana modal -->
+            <div id="modal">
+                <figure>
+                    <img src="a" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <span id="cerrar" onclick="cerrarVentana()">X</span>
+            </div>
+        </main>
              
-        <footer>
+        <footer id="contact">
             <div>
                 <div class="direcciones1">
                     <div>
-                    <a href="https://www.instagram.com/themuseumofmodernart/" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/MuseumofModernArt/" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/museummodernart" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.youtube.com/playlist?list=PLfYVzk0sNiGEK6K6DG2jacP_mDp4gQIpC" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://moma.tumblr.com/" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-tumblr"></i>
-                    </a>
+                        <a href="https://www.instagram.com/themuseumofmodernart/" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/MuseumofModernArt/" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/museummodernart" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/playlist?list=PLfYVzk0sNiGEK6K6DG2jacP_mDp4gQIpC" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://moma.tumblr.com/" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-tumblr"></i>
+                        </a>
                     </div>
                     <div>
-                    <p>MOMA</p>
-                    <p>11 West 53 Street, Manhattan</p>
-                    <p1><strong>Cerrado hoy</strong></p1>
+                        <p>MOMA</p>
+                        <p>11 West 53 Street, Manhattan</p>
+                        <p><strong>Cerrado hoy</strong></p>
                     </div>
                 </div> 
-                   <div class="direcciones2">
+                <div class="direcciones2">
                     <div>
-                    <a href="https://www.instagram.com/themuseumofmodernart/" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/MuseumofModernArt/" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/museummodernart" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-twitter"></i>
-                    </a>
-                     <a href="https://www.youtube.com/playlist?list=PLfYVzk0sNiGEK6K6DG2jacP_mDp4gQIpC" target="_blank" title="se abre en una nueva pestaña">
-                    <i class="fab fa-youtube"></i>
-                    </a>                
+                        <a href="https://www.instagram.com/themuseumofmodernart/" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/MuseumofModernArt/" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/museummodernart" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/playlist?list=PLfYVzk0sNiGEK6K6DG2jacP_mDp4gQIpC" target="_blank" title="se abre en una nueva pestaña">
+                            <i class="fab fa-youtube"></i>
+                        </a>                
                     </div>
                     <div>
-                    <p>MOMA</p>
-                    <p>22-25 Jackson Avenue, Queens</p>
-                    <p1><strong>Cerrado hoy</strong></p1>
+                        <p>MOMA</p>
+                        <p>22-25 Jackson Avenue, Queens</p>
+                        <p><strong>Cerrado hoy</strong></p>
                     </div>
                 </div> 
             </div>
-           <div class="copy">
-             &copy; 2020 - Dorothea Lange Exposition
+            <div class="copy">
+                &copy; 2020 - Dorothea Lange Exposition
             </div>
-        </footer>
-             
+        </footer>  
     </body>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+</html>

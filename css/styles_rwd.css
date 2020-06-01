@@ -1,0 +1,217 @@
+/* MEDIA QUERIES */
+
+ 
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 70px;
+        line-height: 65px;    
+        }
+        
+    h2 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    
+    h3 {
+       padding-left: 3em;
+    }
+       
+        
+    p{
+        font-size: 10px;
+        line-height: 18px;
+    } 
+    
+    a {
+        font-size: 15px;
+    }  
+        
+    /* MAQUETACIÓN DEL HEADER */
+        
+
+    header {
+        padding-left: 3em;
+        padding-bottom: 5em;
+    } 
+    
+    /* MAQUETACIÓN DEL MENÚ */
+
+    #menu {
+        width: 100vw;
+        padding-top: 2em;
+        height: 1em;    
+        display: flex;
+        align-items: center;
+    }
+
+    #menu > ul {
+        flex-direction: column;
+        font-size: 1.5em;
+        padding-right: 1.5em;
+        position: absolute;    
+    }
+
+    #menu > a {
+        padding-left: 7em;
+        text-align: center;
+    }
+
+    #menu > ul >li {
+        padding-right: 0;
+        width: 100%;
+        background-color: rgba(17, 17, 17, 0.452);
+    }
+
+    #menu > ul > li#primero {
+        padding-top: 8em;
+    }
+
+    #menu > ul > li:last-child {
+        padding-bottom: 1em;
+        padding-right: 2em;
+    }
+    
+    /* Mostramos la opción del menú con el icono y ocultamos el resto de opciones */
+    #menu > ul > li:first-child {
+        display: block;
+        color: white;
+    }
+    
+    #menu > ul > li:not(:first-child) {
+        display: none;
+    }
+
+
+    #menu > ul#tres > li >i {
+        color: black;  
+    }
+
+    #menu > ul#tres > li >i:hover {
+        color: #FF6666;
+    }
+
+    #menu > ul#tres > li { 
+        background-color: rgba(250, 250, 250, 0.897);
+    }
+
+    #menu > ul#tres > li#expoOcultar { 
+        display: none;
+    }
+
+    
+
+    .fa-bars {
+        position: absolute;
+        top: 29%;   
+    }
+    
+    .fa-bars:hover {
+        color: #FF6666;
+        cursor: pointer;
+    }
+    
+        
+    /* Maquetación SECCIONES */
+    section {
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-bottom: 2em;
+    }
+
+    #quien > div > div {
+        flex: 100%;
+    }
+    
+    #quien > div {
+        padding-right: 3em;
+        padding-left: 3em;
+        width: 100vw;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    #donde {
+        padding-right: 3em;
+    }
+    
+    #donde > div {
+        padding-right: 3em;
+        padding-left: 3em;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    #donde > div {
+        flex: 100%;
+    }
+
+    #expo > div {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .galeria {
+        width: 100%;
+    }
+
+    #donde {
+        flex-direction: column;
+    }
+
+    .mapa2 {
+        display: flex;
+        width: 100%;
+    }
+
+    .mapa2 > iframe {
+        height: 10%;
+    }
+
+    .mapa{
+        display: none;
+    }
+  
+
+
+    #expo > div > div:last-child {
+        width: 100%;
+    }
+
+    #expo > div > div > a {
+        padding: 0.6em 3em 0.6em 3em;
+        font-size: 0.6em;
+
+    }
+
+    #contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 2em;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    #contact > div > div.direcciones1 > div:last-child > p{
+        margin-top: 0;
+    }
+
+    #contact > div > div.direcciones2 > div:last-child > p{
+        margin-top: 0;
+    }
+
+    #contact > div > div.direcciones1{
+        padding: 0;
+        padding-bottom: 2em;
+    }
+
+    .copy {
+        color: rgb(95, 95, 95);
+        padding-top: 2em;
+    }
+    
+
+}

@@ -192,11 +192,12 @@
         flex-direction: column;
         padding-top: 2em;
         padding-left: 3em;
-        padding-right: 3em;
+        padding-right: 1em;
     }
     
     #contact > div > div.direcciones1 > div:last-child > p{
         margin-top: 0;
+        padding-right: 2em;
     }
 
     #contact > div > div.direcciones2 > div:last-child > p{
@@ -213,5 +214,72 @@
         padding-top: 2em;
     }
     
+    #cabecera-expo {
+        padding-left: 3em;
+        padding-bottom: 5em;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    #cabecera-expo > h1 {
+        font-size: 70px;
+        line-height: 65px;
+        padding-left: 0.2em;
+    }
+    
+    #cabecera-expo > p {
+        padding-top: 1em;
+        font-size: 10px;
+        line-height: 18px;
+        padding-bottom: 1em;
+        
+    }
+    
+    .salasExpo {
+        display: none
+    }
+    
+  
+    .galeria1 > figure {
+        width: 90vw;
+        height: 10vh;
+        
+    }
+    
+    .galeria1 > figure > img {
+        height: 10vh;
+        width: 74.5vw;
+    }
 
+    #publicaciones > div.galeria1 > .customsize4 > img {
+        height: 15em;
+
+    }
+    
+    #publicaciones > div.galeria1 > .customsize4 > h3 {
+        font-size: 1em;
+        padding-left: 0;
+    }           
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

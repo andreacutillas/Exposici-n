@@ -823,11 +823,24 @@ footer > section > form {
     cursor: pointer;
 }
 
-flecha {
+.flechita {
+    margin-top: 89vh;
+    margin-left: 93vw;
+    z-index: 4;
     position: fixed;
-    padding-left: 3em;
-    display: flex;
     
+}
+
+.flechita > a > i{
+    font-size: 2em;
+    color: #FF6666;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.flechita > a > i:hover{
+    color: white;
+
 }
 
 

@@ -64,6 +64,10 @@ a {
     color: #FF6666;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 /* MAQUETACIÓN DEL HEADER */
 
@@ -113,7 +117,6 @@ strong {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-
 
 
 /* MAQUETACIÓN DEL MENÚ */
@@ -191,6 +194,7 @@ strong {
 #menu > ul > li:first-child {
     display: none;
 }
+
 
 /* ESTILOS PARA LA PÁGINA PRINCIPAL */
 
@@ -315,7 +319,6 @@ section {
     transform: scale(1.4, 1.4);
 }
 
-
 /* Maquetación: Sección EXPO */
 
 #expo {
@@ -382,7 +385,6 @@ section {
     animation: slider3 10s infinite; 
 }
 
-
 @keyframes slider3 {
     0% {
         left: 0;
@@ -414,48 +416,9 @@ section {
 }
 
 
-footer {
-    background-color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    padding: 4em;
-    padding-bottom: 2em;
-    padding-left: 10em;
-    padding-right: 10em;
-    color: white;
-    font-size: 0.9em;
-}
-
-.copy {
-    font-size: 0.7em;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 10em;
-}
-
-.direcciones1 > div > a > i {
-    color: #FF6666; 
-    
-}
-
-footer > div {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer > div > div.direcciones1 {
-    padding-right: 20em;
-} 
-
-footer > section > form {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9em;
-}
-
 /*  MAQUETACIÓN PARA EXPO.HTML */
 
-
 /* Segundo menú  */
-  
-
     
 #menu > a#dos {
     font-family: 'Montserrat', sans-serif;
@@ -502,9 +465,6 @@ footer > section > form {
     transform: translateY(15px);
 }
 
-
-
-
 /*  Maquetación: Sección CABECERA-EXPO  */
 
 #cabecera-expo {
@@ -543,10 +503,6 @@ footer > section > form {
 
 #menu > ul#tres > li#expoOcultar { 
     display: none;
-}
-
-body{
-    overflow-x: hidden;
 }
 
 .salasExpo {
@@ -655,9 +611,11 @@ body{
     color: white;
  }
 
+ /*Maquetación: Galerías de imágenes de la Expo*/
 
-.galeria1 {
-    padding-top: 3em; 
+ 
+
+.galeria1 { 
     width: 100%;
     margin: 1em auto;
     display: flex;
@@ -684,6 +642,37 @@ body{
     border-radius: 4px;   
 }
 
+.galeria1  > figure > figcaption {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 0.9em;
+    opacity: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.44px;
+}
+
+.galeria1 > figure:hover> figcaption {
+    opacity: 1;
+}
+
+/*Galería Sección: Live*/
+.galeria1 > figure.customsize {
+    flex: 20%;
+}
+
+/*Galería Seccines: migrantmother y sanfranciscostreets*/
 .galeria1 > figure.customsize1 {
     height: 270px;
 }
@@ -754,31 +743,7 @@ body{
     padding-top: 0;
 }
 
-
-.galeria1  > figure > figcaption {
-    background-color: rgba(255, 255, 255, 0.8);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 2em;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    text-align: center;
-    border-radius: 4px;
-    font-size: 0.9em;
-    opacity: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    letter-spacing: 0.44px;
-}
-
-.galeria1 > figure:hover> figcaption {
-    opacity: 1;
-}
+/*Maquetación de la ventana Modal*/
 
 #modal {
     z-index: 1;
@@ -828,12 +793,13 @@ body{
     cursor: pointer;
 }
 
+/*Maquetación de la flecha que redirige al inicio de expo.html*/
+
 .flechita {
     margin-top: 89vh;
     margin-left: 93vw;
     z-index: 4;
-    position: fixed;
-    
+    position: fixed;  
 }
 
 .flechita > a > i{
@@ -845,39 +811,51 @@ body{
 
 .flechita > a > i:hover{
     color: white;
-
 }
 
+/*Maquetación del footer*/
 
+footer {
+    background-color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    padding: 4em;
+    padding-bottom: 2em;
+    padding-left: 10em;
+    padding-right: 10em;
+    color: white;
+    font-size: 0.9em;
+}
 
+.copy {
+    font-size: 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 8em;
+    color: rgb(126, 126, 126);
+}
 
+.direcciones1 > div > a > i {
+    color: #FF6666; 
+    
+}
 
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+footer > div > div.direcciones1 {
+    padding-right: 20em;
+} 
 
+footer > section > form {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+}
 
+footer > div > div > div:last-child {
+    padding-top: 2em;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer > div > div > div:last-child > p {
+    margin-top: 1em;
+}
